@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>李杰</h1>
+        <p>扬州信息工程系计算机应用网络</p>
+    </header>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/per.jpg" class="face">SR星ACE飞行员
+            </div>
+            <button class="hbb" id="hbb">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">个人介绍</a>
+                <a href="#" class="nav-link">教育背景</a>
+                <a href="#" class="nav-link">兴趣爱好</a>
+                <a href="#" class="nav-link">联系方式</a>
+            </div>
+        </div>
+    <script>
+        const hbb=document.getElementById('hbb');
+        const navlinks=document.querySelector('.nav-links');
+        hbb.addEventListener('click',()=>{
+            hbb.classList.toggle('active');
+            navlinks.classList.toggle('active');
+
+        });
+    </script>
+    </nav>
+
+
+    <main class="main-content">
+        <div class="primary-content">
+            <div class="content-card">
+                <h2>个人介绍</h2>
+                <p></p>
+                <p>我有我个性，我由我主宰，我有自己的一片天空。我有我自己创造的未来。</p>
+            </div>
+    
+            <div class="content-card">
+                <h3>教育背景</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        
+                        <h4>初中</h4>
+                        <p>2013-2016年 贝尔卡初中</p>
+                        <img src="images/ACE0.jpg" class="face">
+                    </div>
+    
+                    <div class="timeline-item">
+                        
+                        <h4>大专</h4>
+                        <p>2016-2019年 巨石阵高中</p>
+                        <img src="images/ACE4.jpg" class="face">
+                    </div>
+    
+                    <div class="timeline-item">
+                        
+                        <h4>实习</h4>
+                        <p>2019-2024年 白鸟大学</p>
+                        <img src="images/ACE5.jpg" class="face">
+                    </div>
+                </div>
+            </div>
+        </div>
+<aside class="asiderbar">
+    <div class="content-card">
+        <h3>兴趣爱好</h3>
+        <ul>
+            <li>唱歌</li>
+            <li>跳舞</li>
+            <li>游戏</li>
+            <li>旅游</li>
+        </ul>
+    </div>
+</aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 我的个人主页. 保留所有权利.</p>
+    </footer>
+    
+    </body>
+    </html>
